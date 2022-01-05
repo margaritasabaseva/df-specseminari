@@ -11699,3 +11699,15 @@ body {
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
 }
+
+.btn-specseminars {
+  color: #fff;
+  background-color: #1C5085;
+  border-color: #1C5085;
+}
+
+.btn-specseminars:hover {
+  color: #fff;
+  background-color: #1C5085;
+  border-color: #1C5085;
+}
