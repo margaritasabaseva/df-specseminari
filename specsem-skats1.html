@@ -20,7 +20,7 @@
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 ps-4" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="pasn-mani-specsem.html">
+            <a class="navbar-brand ps-3" href="pasn-jauns-specsem.html">
                 <img src="assets\img\lu_logo_balts.svg" alt="LOGO" height="50">
             </a>
             <!-- Navbar-->
@@ -113,76 +113,90 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4 pb-3">Jauns specseminārs</h1>
-                        <div class="card mb-4 container-fluid d-flex justify-content-center" style="max-width: 80%;">
+                        <!-- <h1 class="mt-4 pb-3">Jauns Specseminārs</h1> -->
+                        <div class="card mt-5 mb-4 container-fluid d-flex justify-content-center" style="max-width: 80%;">
                             <div class="card-body">
-                                <form class="row g-3 needs-validation px-3 container-fluid d-flex justify-content-center" novalidate>
+                                <div class="row g-3 p-2 container-fluid d-flex justify-content-center">
                                     <div class="col-md-5">
                                         <div class="row p-3">
-                                            <label for="validationCustom01" class="form-label">Nosaukums *</label>
-                                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                            <h5 class="card-title" style="font-style: normal; font-weight: bold; font-size: 24px; 
+                                            line-height: 36px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #204C79;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</h5>
+                                        </div>
+                                        <div class="row p-3 card-body">
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #818E9B;">Pasniedzēji</h6>
+                                                <ul class="list-group list-group-flush">
+                                                    <div class="list-group-item"><img src="assets\img\linda-belinda-mazs.png" width="40px" style="margin-right: 7px;"> Linda Belinda
+                                                        <small><i style="margin-left: 3px;">dr.dat</i></small>
+                                                    </div>
+                                                    <div class="list-group-item"><img src="assets\img\liga-pasniedzeja-mazs.png" width="40px" style="margin-right: 7px;"> Līga Pasniedzēja
+                                                        <small><i style="margin-left: 3px;">dr.dat</i></small>
+                                                    </div>
+                                                </ul>
                                         </div>
                                         <div class="row p-3">
-                                            <label for="validationCustom04" class="form-label">Pasniedzējs *</label>
-                                            <select class="selectpicker form-control" id="validationCustom06" multiple required data-live-search="true" value="" >
-                                                <option value="liga">Līga Pasniedzēja</option>
-                                                <option value="sniedzis">Sniedzis Pasniedzis</option>
-                                                <option value="pasniedzejs">Pasniedzējs Jānis</option>
-                                            </select>
-                                        </div>
-                                        <div class="row form-group p-3">
-                                            <label for="validationCustom07">Vietu skaits</label>
-                                            <div class="form-group col-sm">
-                                                <label for="validationCustom07">Minimālais</label>
-                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required>
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #818E9B;">Vietu skaits</h6>
+                                            <!-- <label for="validationCustom07">Vietu skaits</label> -->
+                                            <div class="col-sm-3 text-center">
+                                                <p>Minimālais: </p>
+                                                <b style="color: #707683;">4</b>
+                                                <!-- <label for="validationCustom07">Minimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
                                             </div>
-                                            <div class="form-group col-sm">
-                                                <label for="validationCustom07">Maksimālais</label>
-                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required>
+                                            <div class="col-sm-3 text-center">
+                                                <p>Maksimālais: </p>
+                                                <b style="color: #707683;">20</b>
+                                                <!-- <label for="validationCustom07">Maksimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
+                                            </div>
+                                            <div class="col-sm-3 text-center">
+                                                <p>Brīvās vietas: </p>
+                                                <b style="color: #707683;">12/20</b>
+                                                <!-- <label for="validationCustom07">Maksimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="row p-3">
-                                            <label for="validationCustom02" class="form-label">Norises laiks *</label>
-                                            <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                        <div class="row p-3 pt-5">
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #818E9B;">Norises laiks</h6>
+                                            <ul>
+                                                <li class="ml-4">katru otro piektdienu 14.00–16.00</li>
+                                                <li class="ml-4">pirmā sanāksme 10. septembrī 14.00-16.00</li>
+                                            </ul>
+                                            <!-- <label for="validationCustom02" class="form-label">Norises laiks *</label>
+                                            <input type="text" class="form-control" id="validationCustom02" value="" required> -->
                                         </div>
                                         <div class="row p-3">
-                                            <label for="validationCustom03" class="form-label">Norises vieta *</label>
-                                            <input type="text" class="form-control" id="validationCustom03" required>
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #818E9B;">Norises vieta</h6>
+                                            <ul>
+                                                <li class="ml-4">Raiņa bulvāris 19</li>
+                                            </ul>
+                                            <!-- <label for="validationCustom03" class="form-label">Norises vieta *</label>
+                                            <input type="text" class="form-control" id="validationCustom03" required> -->
                                         </div>
                                         <div class="row p-3">
-                                            <label for="validationCustom05" class="form-label">Saite uz detalizētu aprakstu *</label>
-                                            <input type="text" class="form-control" id="validationCustom05" required>
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #818E9B;">Saite uz detalizētu aprakstu</h6>
+                                            <a href="#">www.df.lu.lv/specseminara_apraksts.pdf</a>
+                                            <!-- <label for="validationCustom05" class="form-label">Saite uz detalizētu aprakstu *</label>
+                                            <input type="text" class="form-control" id="validationCustom05" required> -->
+                                        </div>
+                                        <div class="pt-3 text-center">
+                                            <a href="#" class="btn btn-primary btn-md" role="button" aria-pressed="true">Rediģēt</a>
+                                            <a href="#" class="btn btn-secondary btn-md" role="button" aria-pressed="true">Studentu saraksts</a>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <button class="btn btn-primary" type="submit">Publicēt specsemināru</button>
-                                        </div>
-                                    </div>
-                                  </form>
-                                  <script>
-                                      (function () {
-                                        'use strict'
-
-                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                        var forms = document.querySelectorAll('.needs-validation')
-
-                                        // Loop over them and prevent submission
-                                        Array.prototype.slice.call(forms)
-                                            .forEach(function (form) {
-                                            form.addEventListener('submit', function (event) {
-                                                if (!form.checkValidity()) {
-                                                event.preventDefault()
-                                                event.stopPropagation()
-                                                }
-
-                                                form.classList.add('was-validated')
-                                            }, false)
-                                            })
-                                        })()
-                                  </script>
+                                </div>
                             </div>
                         </div>
                     </div>

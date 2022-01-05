@@ -20,7 +20,7 @@
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 ps-4" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="pasn-mani-specsem.html">
+            <a class="navbar-brand ps-3" href="pasn-jauns-specsem.html">
                 <img src="assets\img\lu_logo_balts.svg" alt="LOGO" height="50">
             </a>
             <!-- Navbar-->
@@ -113,76 +113,59 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4 pb-3">Jauns specseminārs</h1>
+                        <h1 class="mt-4 pb-3">Jauns Specseminārs</h1>
                         <div class="card mb-4 container-fluid d-flex justify-content-center" style="max-width: 80%;">
                             <div class="card-body">
-                                <form class="row g-3 needs-validation px-3 container-fluid d-flex justify-content-center" novalidate>
-                                    <div class="col-md-5">
-                                        <div class="row p-3">
-                                            <label for="validationCustom01" class="form-label">Nosaukums *</label>
-                                            <input type="text" class="form-control" id="validationCustom01" value="" required>
-                                        </div>
-                                        <div class="row p-3">
-                                            <label for="validationCustom04" class="form-label">Pasniedzējs *</label>
-                                            <select class="selectpicker form-control" id="validationCustom06" multiple required data-live-search="true" value="" >
-                                                <option value="liga">Līga Pasniedzēja</option>
-                                                <option value="sniedzis">Sniedzis Pasniedzis</option>
-                                                <option value="pasniedzejs">Pasniedzējs Jānis</option>
-                                            </select>
-                                        </div>
-                                        <div class="row form-group p-3">
-                                            <label for="validationCustom07">Vietu skaits</label>
-                                            <div class="form-group col-sm">
-                                                <label for="validationCustom07">Minimālais</label>
-                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required>
-                                            </div>
-                                            <div class="form-group col-sm">
-                                                <label for="validationCustom07">Maksimālais</label>
-                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <div class="row p-3">
-                                            <label for="validationCustom02" class="form-label">Norises laiks *</label>
-                                            <input type="text" class="form-control" id="validationCustom02" value="" required>
-                                        </div>
-                                        <div class="row p-3">
-                                            <label for="validationCustom03" class="form-label">Norises vieta *</label>
-                                            <input type="text" class="form-control" id="validationCustom03" required>
-                                        </div>
-                                        <div class="row p-3">
-                                            <label for="validationCustom05" class="form-label">Saite uz detalizētu aprakstu *</label>
-                                            <input type="text" class="form-control" id="validationCustom05" required>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <button class="btn btn-primary" type="submit">Publicēt specsemināru</button>
-                                        </div>
-                                    </div>
-                                  </form>
-                                  <script>
-                                      (function () {
-                                        'use strict'
-
-                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                        var forms = document.querySelectorAll('.needs-validation')
-
-                                        // Loop over them and prevent submission
-                                        Array.prototype.slice.call(forms)
-                                            .forEach(function (form) {
-                                            form.addEventListener('submit', function (event) {
-                                                if (!form.checkValidity()) {
-                                                event.preventDefault()
-                                                event.stopPropagation()
-                                                }
-
-                                                form.classList.add('was-validated')
-                                            }, false)
-                                            })
-                                        })()
-                                  </script>
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Nosaukums</th>
+                                            <!-- <th class="text-center">Vadītāji</th>
+                                            <th class="text-center">Laiks</th> -->
+                                            <th class="text-center">Vietu skaits
+                                                <br>(min. | aizņ. | maks.)
+                                            </th>
+                                            <th class="text-center">Statuss</th>
+                                            <th class="text-center">Darbība</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Informācijas un
+                                                komunikācijas tehnoloģijas
+                                                nozares terminoloģija</td>
+                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">Nav</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-primary">Pieteikties</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eksperimentālās metodes</td>
+                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">Nav</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-primary">Pieteikties</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>No produktu dizaina līdz lietotāja pieredzes dizainam</td>
+                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">Nav</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-primary">Pieteikties</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Valodas tehnoloģijas un mākslīgais intelekts</td>
+                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">Nav</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-primary">Pieteikties</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
