@@ -11704,6 +11704,7 @@ body {
   color: #fff;
   background-color: #1C5085;
   border-color: #1C5085;
+  width: 100%;
 }
 
 .btn-specseminars:hover {
@@ -11716,6 +11717,7 @@ body {
   color: #1C5085;
   background-color: #fff;
   border-color: #1C5085;
+  width: 100%;
 }
 
 .btn-login {
