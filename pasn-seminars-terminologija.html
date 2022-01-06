@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Specseminārs</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: #1C5085; height: 70px;">
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 ps-4" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="#">
+                <img src="assets\img\lu_logo_balts.svg" alt="LOGO" height="50">
+            </a>
+            <!-- Navbar-->
+            <ul class="nav navbar-nav d-none d-md-inline-block ms-auto me-0 me-md-3 my-2 my-md-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">LV<i class="fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">LV</a></li>
+                        <li><a class="dropdown-item" href="#!">EN</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <ul class="nav navbar-nav d-none d-md-inline-block pr-5">
+                    <li class="nav-item navbar-right">
+                        <a class="nav-link" href="https://www.lu.lv/" target="_blank"><img src="assets\img\globe.svg" alt="globe" height="20"></a>
+                    </li>
+                </ul>
+        </nav>
+        <!-- SIDEBAR NAV -->
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu" style="background-color:white; box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);">
+                        <div class="nav mt-3">
+                            <div class="nav-link" href="pasniedzejs-mani-specsem.html">
+                                <div class="sb-nav-link-icon"><img src="assets\img\liga-pasniedzeja-mazs.png" height="46px"></div>
+                                <div class="mt-3"> <b>Līga Pasniedzēja </b><p class="small" style="color:#696968;">
+                                    <b>Prof., Dr.dat.</b>
+                                </p></div>
+                            </div>
+                            <a class="nav-link" href="pasniedzejs-jauns-specsem.html">
+                                <div class="sb-nav-link-icon"><img src="assets\img\pievienot-specsem-peleks.svg"></div>
+                                <div style="color:#696968;"> <b>Jauns specseminārs </b></div>
+                            </a>
+                            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><img src="assets\img\mani-specseminari-zils.svg"></div>
+                                <div style="color:#1C5085;"><b>Mani specsemināri</b></div>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse show" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="pasniedzejs-mani-specsem.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        <a class="mx-2 fw-bold small"  href="pasniedzejs-mani-specsem.html" style="color:#696968; text-decoration: none;">Visu specsemināru saraksts </a>
+                                    </a>
+                                    <a class="nav-link collapsed" href="pasn-seminars-terminologija.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        <a class="mx-2 fw-bold small" href="pasn-seminars-terminologija.html" style="color:#1C5085; text-decoration: none;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija </a>
+                                    </a>
+                                    <a class="nav-link collapsed" href="pasn-seminars-blokkedes.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        <a class="mx-2 fw-bold small" href="pasn-seminars-blokkedes.html" style="color:#696968; text-decoration: none;">Blokķēdes </a>
+                                    </a>
+                                </nav>
+                            </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- PAGE CONTENT -->
+            <div id="layoutSidenav_content" style="background-color:#F5F6F8;">
+                <main>
+                    <div class="container-fluid px-4">
+                        <!-- <h1 class="mt-4 pb-3">Jauns Specseminārs</h1> -->
+                        <div class="card mt-5 mb-4 container-fluid d-flex justify-content-center border-0" style="max-width: 80%; background: #FFFFFF; box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); border-radius: 10px;">
+                            <div class="card-body">
+                                <div class="row g-3 p-2 container-fluid d-flex justify-content-center">
+                                    <div class="col-md-5">
+                                        <div class="row p-3">
+                                            <h5 class="card-title" style="font-style: normal; font-weight: bold; font-size: 24px; 
+                                            line-height: 36px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #1C5085;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</h5>
+                                        </div>
+                                        <div class="row p-3 card-body">
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #5f6a75;">Pasniedzēji</h6>
+                                                <ul class="list-group list-group-flush">
+                                                    <div class="list-group-item"><img src="assets\img\linda-belinda-mazs.png" width="40px" style="margin-right: 7px;"> Linda Belinda
+                                                        <small><i style="margin-left: 3px;">dr.dat</i></small>
+                                                    </div>
+                                                    <div class="list-group-item"><img src="assets\img\liga-pasniedzeja-mazs.png" width="40px" style="margin-right: 7px;"> Līga Pasniedzēja
+                                                        <small><i style="margin-left: 3px;">dr.dat</i></small>
+                                                    </div>
+                                                </ul>
+                                        </div>
+                                        <div class="row p-3">
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #5f6a75;">Vietu skaits</h6>
+                                            <!-- <label for="validationCustom07">Vietu skaits</label> -->
+                                            <div class="col-sm-3 text-center">
+                                                <p style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em; color: #34495E;">Minimālais: </p>
+                                                <b style="color: #707683; font-size: 15px;">4</b>
+                                                <!-- <label for="validationCustom07">Minimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
+                                            </div>
+                                            <div class="col-sm-3 text-center">
+                                                <p style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em; color: #34495E;">Maksimālais: </p>
+                                                <b style="color: #707683; font-size: 15px;">20</b>
+                                                <!-- <label for="validationCustom07">Maksimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
+                                            </div>
+                                            <div class="col-sm-3 text-center">
+                                                <p style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em; color: #34495E;">Brīvās vietas: </p>
+                                                <b style="color: #707683; font-size: 15px;">12/20</b>
+                                                <!-- <label for="validationCustom07">Maksimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="row p-3 pt-5">
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #5f6a75;">Norises laiks</h6>
+                                            <ul style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em;">
+                                                <li class="ml-4">katru otro piektdienu 14.00–16.00</li>
+                                                <li class="ml-4">pirmā sanāksme 10. septembrī 14.00-16.00</li>
+                                            </ul>
+                                            <!-- <label for="validationCustom02" class="form-label">Norises laiks *</label>
+                                            <input type="text" class="form-control" id="validationCustom02" value="" required> -->
+                                        </div>
+                                        <div class="row p-3">
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #5f6a75;">Norises vieta</h6>
+                                            <ul style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em;">
+                                                <li class="ml-4">Raiņa bulvāris 19</li>
+                                            </ul>
+                                            <!-- <label for="validationCustom03" class="form-label">Norises vieta *</label>
+                                            <input type="text" class="form-control" id="validationCustom03" required> -->
+                                        </div>
+                                        <div class="row p-3">
+                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #5f6a75;">Saite uz detalizētu aprakstu</h6>
+                                            <a href="#" class="ml-2" style="font-size: 14px; line-height: 19px; display: flex; letter-spacing: 0.01em;">www.df.lu.lv/specseminara_apraksts.pdf</a>
+                                            <!-- <label for="validationCustom05" class="form-label">Saite uz detalizētu aprakstu *</label>
+                                            <input type="text" class="form-control" id="validationCustom05" required> -->
+                                        </div>
+                                        <div class="mt-4 text-center">
+                                            <a href="pasn-rediget-terminologija.html" class="btn btn-primary" role="button" aria-pressed="true" style="min-width: 200px; height: 40px; margin-right: 10px; background-color: #1C5085; border: 1px solid #1C5085; border-radius: 5px">Rediģēt</a>
+                                            <a href="#" class="btn btn-secondary-light" role="button" aria-pressed="true" style="min-width: 200px; height: 40px; border: 1px solid #1C5085; box-sizing: border-box; color: #1C5085; border-radius: 5px">Studentu saraksts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- END OF PAGE CONTENT -->
+                <footer class="py-4 mt-auto" style="background-color: rgba(28, 80, 133, 0.2);">
+                    <div class="text-muted d-flex align-items-center justify-content-center">Jūs esat pieslēdzies kā&nbsp;
+                        <a href="login.html" class="text-muted">Līga Pasniedzēja (Atslēgties)</a>
+                    </div>
+                    <hr style="height: 2px; background: #EBEFF2;"/>
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-center small">
+                            <div>
+                                <a href="https://www.lu.lv/" target="_blank">LU</a>
+                                &middot;
+                                <a href="https://www.df.lu.lv/" target="_blank">LU DF</a>
+                                &middot;
+                                <a href="https://estudijas.lu.lv/" target="_blank">E-studijas</a>
+                                &middot;
+                                <a target="_blank" href="https://lu-idp.lu.lv/simplesaml/module.php/core/loginuserpass.php?AuthState=_e033ffc08488f1ed9b965ac30dfcca956a7fc4ad33%3Ahttps%3A%2F%2Flu-idp.lu.lv%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fluis.lu.lv%252Fshibboleth%26RelayState%3Dss%253Amem%253A146a91a84e5877f09bf4209d305dad3b16ebb32ccb43237b113328f9e3c4a4fa%26cookieTime%3D1641422094">LUIS</a>
+                                &middot;
+                                <a href="https://serviss.lu.lv/login?back_url=https%3A%2F%2Fserviss.lu.lv%2F" target="_blank">LU IT Serviss</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
