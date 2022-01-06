@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Specseminārs</title>
+        <title>Jauns Specseminārs</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
@@ -14,13 +14,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: #1C5085; height: 70px;">
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 ps-4" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="pasn-jauns-specsem.html">
+            <a class="navbar-brand ps-3" href="pasn-mani-specsem.html">
                 <img src="assets\img\lu_logo_balts.svg" alt="LOGO" height="50">
             </a>
             <!-- Navbar-->
@@ -34,10 +35,10 @@
                 </li>
                 </ul>
                 <ul class="nav navbar-nav d-none d-md-inline-block pr-5">
-                    <li class="nav-item navbar-right">
-                        <a class="nav-link" href="https://www.lu.lv/" target="_blank"><img src="assets\img\globe.svg" alt="globe" height="20"></a>
-                    </li>
-                </ul>
+                <li class="nav-item navbar-right">
+                    <a class="nav-link" href="https://www.lu.lv/" target="_blank"><img src="assets\img\globe.svg" alt="globe" height="20"></a>
+                </li>
+              </ul>
         </nav>
         <!-- SIDEBAR NAV -->
         <div id="layoutSidenav">
@@ -63,10 +64,10 @@
                             <div class="collapse show" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="pasniedzejs-mani-specsem.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        <a class="mx-2 fw-bold small"  href="pasniedzejs-mani-specsem.html" style="color:#696968; text-decoration: none;">Visi mani specsemināri </a>
+                                        <a class="mx-2 fw-bold small"  href="pasniedzejs-mani-specsem.html" style="color:#696968; text-decoration: none;">Visu specsemināru saraksts </a>
                                     </a>
-                                    <a class="nav-link collapsed" href="seminars-terminologija.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        <a class="mx-2 fw-bold small" href="seminars-terminologija.html" style="color:#1C5085; text-decoration: none;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija </a>
+                                    <a class="nav-link collapsed" href="pasn-seminars-terminologija.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        <a class="mx-2 fw-bold small" href="pasn-seminars-terminologija.html" style="color:#1C5085; text-decoration: none;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija </a>
                                     </a>
                                 </nav>
                             </div>
@@ -77,90 +78,78 @@
             <div id="layoutSidenav_content" style="background-color:#F5F6F8;">
                 <main>
                     <div class="container-fluid px-4">
-                        <!-- <h1 class="mt-4 pb-3">Jauns Specseminārs</h1> -->
-                        <div class="card mt-5 mb-4 container-fluid d-flex justify-content-center border-0" style="max-width: 80%; background: #FFFFFF; box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); border-radius: 10px;">
+                        <h1 class="mt-4 pb-3" style="font-style: bold; font-weight: bold; font-size: 26px; 
+                        line-height: 36px; display: flex; align-items: center; 
+                        letter-spacing: 0.01em; color: #1C5085; margin-left: 30px">Rediģēt specsemināra informāciju</h1>
+                        <div class="card mb-4 container-fluid d-flex justify-content-center border-0" style="max-width: 80%; background: #FFFFFF; box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); border-radius: 10px;">
                             <div class="card-body">
-                                <div class="row g-3 p-2 container-fluid d-flex justify-content-center">
+                                <div class="row g-3 px-3 container-fluid d-flex justify-content-center" novalidate>
                                     <div class="col-md-5">
                                         <div class="row p-3">
-                                            <h5 class="card-title" style="font-style: normal; font-weight: bold; font-size: 24px; 
-                                            line-height: 36px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #1C5085;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</h5>
-                                        </div>
-                                        <div class="row p-3 card-body">
-                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            <label for="validationCustom01" class="form-label" style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #5f6a75;">Pasniedzēji</h6>
-                                                <ul class="list-group list-group-flush">
-                                                    <div class="list-group-item"><img src="assets\img\linda-belinda-mazs.png" width="40px" style="margin-right: 7px;"> Linda Belinda
-                                                        <small><i style="margin-left: 3px;">dr.dat</i></small>
-                                                    </div>
-                                                    <div class="list-group-item"><img src="assets\img\liga-pasniedzeja-mazs.png" width="40px" style="margin-right: 7px;"> Līga Pasniedzēja
-                                                        <small><i style="margin-left: 3px;">dr.dat</i></small>
-                                                    </div>
-                                                </ul>
+                                            letter-spacing: 0.01em; color: #5f6a75;">Nosaukums *</label>
+                                            <input type="text" class="form-control" id="validationCustom01" value="Informācijas un komunikācijas tehnoloģijas nozares terminoloģija" required>
                                         </div>
                                         <div class="row p-3">
-                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            <label for="validationCustom04" class="form-label" style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #5f6a75;">Vietu skaits</h6>
-                                            <!-- <label for="validationCustom07">Vietu skaits</label> -->
-                                            <div class="col-sm-3 text-center">
-                                                <p style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em; color: #34495E;">Minimālais: </p>
-                                                <b style="color: #707683; font-size: 15px;">4</b>
-                                                <!-- <label for="validationCustom07">Minimālais</label>
-                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
+                                            letter-spacing: 0.01em; color: #5f6a75;">Pasniedzējs *</label>
+                                            <select class="selectpicker form-control" id="validationCustom06" multiple required data-live-search="true" title="Līga Pasniedzēja, Linda Belinda" >
+                                                <option class="selected" value="liga">Līga Pasniedzēja</option>
+                                                <option value="linda">Linda Belinda</option>
+                                                <option value="pasniedzejs">Pasniedzējs Jānis</option>
+                                            </select>
+                                        </div>
+                                        <div class="row form-group p-3">
+                                            <label for="validationCustom07" style="font-weight: 500; font-size: 18px; 
+                                            line-height: 27px; display: flex; align-items: center; 
+                                            letter-spacing: 0.01em; color: #5f6a75;">Vietu skaits</label>
+                                            <div class="form-group col-sm">
+                                                <label for="validationCustom07">Minimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" value="4" required>
                                             </div>
-                                            <div class="col-sm-3 text-center">
-                                                <p style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em; color: #34495E;">Maksimālais: </p>
-                                                <b style="color: #707683; font-size: 15px;">20</b>
-                                                <!-- <label for="validationCustom07">Maksimālais</label>
-                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
-                                            </div>
-                                            <div class="col-sm-3 text-center">
-                                                <p style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em; color: #34495E;">Brīvās vietas: </p>
-                                                <b style="color: #707683; font-size: 15px;">12/20</b>
-                                                <!-- <label for="validationCustom07">Maksimālais</label>
-                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" required> -->
+                                            <div class="form-group col-sm">
+                                                <label for="validationCustom07">Maksimālais</label>
+                                                <input id="validationCustom07" class="form-control" type="number" min="1" max="20" value="20" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="row p-3 pt-5">
-                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                        <div class="row p-3">
+                                            <label for="validationCustom02" class="form-label" style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #5f6a75;">Norises laiks</h6>
-                                            <ul style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em;">
-                                                <li class="ml-4">katru otro piektdienu 14.00–16.00</li>
-                                                <li class="ml-4">pirmā sanāksme 10. septembrī 14.00-16.00</li>
-                                            </ul>
-                                            <!-- <label for="validationCustom02" class="form-label">Norises laiks *</label>
-                                            <input type="text" class="form-control" id="validationCustom02" value="" required> -->
+                                            letter-spacing: 0.01em; color: #5f6a75;">Norises laiks *</label>
+                                            <textarea type="text" class="form-control" id="validationCustom02" placeholder="* katru otro piektdienu 14.00–16.00; &#13; * pirmā sanāksme 10. septembrī 14.00-16.00" required></textarea>
                                         </div>
                                         <div class="row p-3">
-                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            <label for="validationCustom03" class="form-label" style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #5f6a75;">Norises vieta</h6>
-                                            <ul style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em;">
-                                                <li class="ml-4">Raiņa bulvāris 19</li>
-                                            </ul>
-                                            <!-- <label for="validationCustom03" class="form-label">Norises vieta *</label>
-                                            <input type="text" class="form-control" id="validationCustom03" required> -->
+                                            letter-spacing: 0.01em; color: #5f6a75;">Norises vieta *</label>
+                                            <textarea type="text" class="form-control" id="validationCustom03" placeholder="* Raiņa bulvāris 19" required></textarea>
                                         </div>
                                         <div class="row p-3">
-                                            <h6 style="font-weight: 500; font-size: 18px; 
+                                            <label for="validationCustom05" class="form-label" style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #5f6a75;">Saite uz detalizētu aprakstu</h6>
-                                            <a href="#" class="ml-2" style="font-size: 14px; line-height: 19px; display: flex; letter-spacing: 0.01em;">www.df.lu.lv/specseminara_apraksts.pdf</a>
-                                            <!-- <label for="validationCustom05" class="form-label">Saite uz detalizētu aprakstu *</label>
-                                            <input type="text" class="form-control" id="validationCustom05" required> -->
-                                        </div>
-                                        <div class="mt-4 text-center">
-                                            <a href="#" class="btn btn-primary" role="button" aria-pressed="true" style="min-width: 150px; margin-right: 10px; background-color: #1C5085; border: 1px solid #1C5085; border-radius: 5px">Rediģēt</a>
-                                            <a href="#" class="btn btn-secondary-light" role="button" aria-pressed="true" style="min-width: 150px; border: 1px solid #1C5085; box-sizing: border-box; color: #1C5085; border-radius: 5px">Studentu saraksts</a>
+                                            letter-spacing: 0.01em; color: #5f6a75;">Saite uz detalizētu aprakstu *</label>
+                                            <input type="text" class="form-control" id="validationCustom05" value="www.df.lu.lv/specseminara_apraksts.pdf" required>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <a href="pasn-seminars-terminologija.html" class="btn btn-secondary-light" role="button" aria-pressed="true" style="min-width: 200px; height: 40px; margin: 10px; border: 1px solid #1C5085; box-sizing: border-box; color: #1C5085; border-radius: 5px">Atcelt</a>
+                                            <button class="btn btn-primary" id="btnShow" style="min-width: 200px; height: 40px; background-color: #1C5085; border: 1px solid #1C5085; border-radius: 5px">Saglabāt izmaiņas</button>
+                                            <div class="alert alert-success" style="display: none;">
+                                              <b>  Izmaiņas saglabātas! </b><a class="text-muted small" href="pasn-seminars-terminologija.html">Atgriezties uz specsemināra skatu.</a>
+                                            </div>
+                                        </div>                       
+                                    </div>
+                                    <script>
+                                        $("#btnShow").click(function(){
+                                        $(".alert").hide().show('medium');
+                                        });
+                                    </script>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -168,7 +157,7 @@
                 <!-- END OF PAGE CONTENT -->
                 <footer class="py-4 mt-auto" style="background-color: rgba(28, 80, 133, 0.2);">
                     <div class="text-muted d-flex align-items-center justify-content-center">Jūs esat pieslēdzies kā &nbsp;
-                        <a href="#" class="text-muted"> Jānis Students (Atslēgties)</a>
+                        <a href="#" class="text-muted">Līga Pasniedzēja (Atslēgties)</a>
                     </div>
                     <hr style="height: 2px; background: #EBEFF2;"/>
                     <div class="container-fluid px-4">
