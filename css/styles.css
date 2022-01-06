@@ -11711,3 +11711,7 @@ body {
   background-color: #1C5085;
   border-color: #1C5085;
 }
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
