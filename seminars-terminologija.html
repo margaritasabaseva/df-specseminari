@@ -35,98 +35,62 @@
                 </ul>
                 <ul class="nav navbar-nav d-none d-md-inline-block pr-5">
                     <li class="nav-item navbar-right">
-                        <a class="nav-link" href="https://www.lu.lv/"><img src="assets\img\globe.svg" alt="globe" height="20" target="_blank"></a>
+                        <a class="nav-link" href="https://www.lu.lv/" target="_blank"><img src="assets\img\globe.svg" alt="globe" height="20"></a>
                     </li>
                 </ul>
         </nav>
+        <!-- SIDEBAR NAV -->
         <div id="layoutSidenav">
-            <div id="layoutSidenav_nav" style="width: 240px; border: 2px solid hotpink">
+            <div id="layoutSidenav_nav">
                 <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
-                                <div class="sb-nav-link-icon"><img src="assets\img\visi_specsem.svg" alt="LOGO" height="50"></div>
-                                Dashboard
-                            </a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Layouts
-                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                            </a>
-                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                                </nav>
+                    <div class="sb-sidenav-menu" style="background-color:white; box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);">
+                        <div class="nav mt-3">
+                            <div class="nav-link" href="pasniedzejs-mani-specsem.html">
+                                <div class="sb-nav-link-icon"><img src="assets\img\liga-pasniedzeja-mazs.png" height="46px"></div>
+                                <div class="mt-3"> <b>Līga Pasniedzēja </b><p class="small" style="color:#696968;">
+                                    <b>Prof., Dr.dat.</b>
+                                </p></div>
                             </div>
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                                Pages
+                            <a class="nav-link" href="pasniedzejs-jauns-specsem.html">
+                                <div class="sb-nav-link-icon"><img src="assets\img\pievienot-specsem-peleks.svg"></div>
+                                <div style="color:#696968;"> <b>Jauns specseminārs </b></div>
+                            </a>
+                            <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><img src="assets\img\mani-specseminari-zils.svg"></div>
+                                <div style="color:#1C5085;"><b>Mani specsemināri</b></div>
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
-                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <div class="collapse show" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <a class="nav-link collapsed" href="pasniedzejs-mani-specsem.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        <a class="mx-2 fw-bold small"  href="pasniedzejs-mani-specsem.html" style="color:#696968; text-decoration: none;">Visi mani specsemināri </a>
                                     </a>
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    <a class="nav-link collapsed" href="seminars-terminologija.html" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        <a class="mx-2 fw-bold small" href="seminars-terminologija.html" style="color:#1C5085; text-decoration: none;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija </a>
                                     </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div>
                                 </nav>
                             </div>
-                            <div class="sb-sidenav-menu-heading">Addons</div>
-                            <a class="nav-link" href="charts.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Charts
-                            </a>
-                            <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
-                            </a>
-                        </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
                     </div>
                 </nav>
             </div>
             <!-- PAGE CONTENT -->
-            <div id="layoutSidenav_content">
+            <div id="layoutSidenav_content" style="background-color:#F5F6F8;">
                 <main>
                     <div class="container-fluid px-4">
                         <!-- <h1 class="mt-4 pb-3">Jauns Specseminārs</h1> -->
-                        <div class="card mt-5 mb-4 container-fluid d-flex justify-content-center" style="max-width: 80%;">
+                        <div class="card mt-5 mb-4 container-fluid d-flex justify-content-center border-0" style="max-width: 80%; background: #FFFFFF; box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); border-radius: 10px;">
                             <div class="card-body">
                                 <div class="row g-3 p-2 container-fluid d-flex justify-content-center">
                                     <div class="col-md-5">
                                         <div class="row p-3">
                                             <h5 class="card-title" style="font-style: normal; font-weight: bold; font-size: 24px; 
                                             line-height: 36px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #204C79;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</h5>
+                                            letter-spacing: 0.01em; color: #1C5085;">Informācijas un komunikācijas tehnoloģijas nozares terminoloģija</h5>
                                         </div>
                                         <div class="row p-3 card-body">
                                             <h6 style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #818E9B;">Pasniedzēji</h6>
+                                            letter-spacing: 0.01em; color: #5f6a75;">Pasniedzēji</h6>
                                                 <ul class="list-group list-group-flush">
                                                     <div class="list-group-item"><img src="assets\img\linda-belinda-mazs.png" width="40px" style="margin-right: 7px;"> Linda Belinda
                                                         <small><i style="margin-left: 3px;">dr.dat</i></small>
@@ -139,7 +103,7 @@
                                         <div class="row p-3">
                                             <h6 style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #818E9B;">Vietu skaits</h6>
+                                            letter-spacing: 0.01em; color: #5f6a75;">Vietu skaits</h6>
                                             <!-- <label for="validationCustom07">Vietu skaits</label> -->
                                             <div class="col-sm-3 text-center">
                                                 <p style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em; color: #34495E;">Minimālais: </p>
@@ -165,7 +129,7 @@
                                         <div class="row p-3 pt-5">
                                             <h6 style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #818E9B;">Norises laiks</h6>
+                                            letter-spacing: 0.01em; color: #5f6a75;">Norises laiks</h6>
                                             <ul style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em;">
                                                 <li class="ml-4">katru otro piektdienu 14.00–16.00</li>
                                                 <li class="ml-4">pirmā sanāksme 10. septembrī 14.00-16.00</li>
@@ -176,7 +140,7 @@
                                         <div class="row p-3">
                                             <h6 style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #818E9B;">Norises vieta</h6>
+                                            letter-spacing: 0.01em; color: #5f6a75;">Norises vieta</h6>
                                             <ul style="font-size: 14px; line-height: 19px; letter-spacing: 0.01em;">
                                                 <li class="ml-4">Raiņa bulvāris 19</li>
                                             </ul>
@@ -186,14 +150,14 @@
                                         <div class="row p-3">
                                             <h6 style="font-weight: 500; font-size: 18px; 
                                             line-height: 27px; display: flex; align-items: center; 
-                                            letter-spacing: 0.01em; color: #818E9B;">Saite uz detalizētu aprakstu</h6>
-                                            <a href="#" style="font-size: 14px; line-height: 19px; display: flex; letter-spacing: 0.01em;">www.df.lu.lv/specseminara_apraksts.pdf</a>
+                                            letter-spacing: 0.01em; color: #5f6a75;">Saite uz detalizētu aprakstu</h6>
+                                            <a href="#" class="ml-2" style="font-size: 14px; line-height: 19px; display: flex; letter-spacing: 0.01em;">www.df.lu.lv/specseminara_apraksts.pdf</a>
                                             <!-- <label for="validationCustom05" class="form-label">Saite uz detalizētu aprakstu *</label>
                                             <input type="text" class="form-control" id="validationCustom05" required> -->
                                         </div>
-                                        <div class="pt-3 text-center">
-                                            <a href="#" class="btn btn-primary btn-md" role="button" aria-pressed="true" style="min-width: 150px; margin-right: 10px;">Rediģēt</a>
-                                            <a href="#" class="btn btn-outline-secondary btn-md" role="button" aria-pressed="true" style="min-width: 150px;">Studentu saraksts</a>
+                                        <div class="mt-4 text-center">
+                                            <a href="#" class="btn btn-primary" role="button" aria-pressed="true" style="min-width: 150px; margin-right: 10px; background-color: #1C5085; border: 1px solid #1C5085; border-radius: 5px">Rediģēt</a>
+                                            <a href="#" class="btn btn-secondary-light" role="button" aria-pressed="true" style="min-width: 150px; border: 1px solid #1C5085; box-sizing: border-box; color: #1C5085; border-radius: 5px">Studentu saraksts</a>
                                         </div>
                                     </div>
                                 </div>
