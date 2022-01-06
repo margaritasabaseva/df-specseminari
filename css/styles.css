@@ -11712,6 +11712,24 @@ body {
   border-color: #1C5085;
 }
 
+.btn-specseminars-balts {
+  color: #1C5085;
+  background-color: #fff;
+  border-color: #1C5085;
+}
+
+.btn-login {
+  color: #000;
+  background-color: #FCB415;
+  border-color: #FCB415;
+  box-shadow: 0px 6px 10px rgba(52, 175, 249, 0.2);
+  border-radius: 4px;
+}
+
 .underline-on-hover:hover {
   text-decoration: underline;
+}
+
+td {
+  vertical-align: middle;
 }

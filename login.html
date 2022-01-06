@@ -9,54 +9,70 @@
         <title>Login - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
     </head>
-    <body class="bg-primary">
+    <body style="background-color: #F5F6F8;">
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-5">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                            <div class="col-lg-5 mt-5 pt-5">
+                                <!-- <div class="card shadow-lg border-0 rounded-lg mt-5"> -->
+                                    <div>
+                                        <!-- <h3 class="text-center font-weight-light my-4">Login</h3> -->
+                                        <img src="assets\img\LU-DF-logo-dzeltens.svg" width="100%">
+                                        <h2 class="text-center fw-bold my-4" style="color:#1C5085; letter-spacing: 4px;">SPECSEMINĀRU PIETEIKŠANĀS SERVISS</h2>
+                                    </div>
                                     <div class="card-body">
                                         <form>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Email address</label>
+                                            <div class="form-floating mb-3 text-center">
+                                                <!-- <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
+                                                <label for="inputEmail">Email address</label> -->
+                                                <a class="btn btn-login fw-bold w-75" href="stud-visi-specseminari.html">Pieslēgties kā studentam</a>
                                             </div>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                                <label for="inputPassword">Password</label>
+                                            <div class="form-floating mb-3 text-center">
+                                                <!-- <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
+                                                <label for="inputPassword">Password</label> -->
+                                                <a class="btn btn-login fw-bold w-75" href="pasniedzejs-mani-specsem.html">Pieslēgties kā pasniedzējam</a>
                                             </div>
-                                            <div class="form-check mb-3">
+                                            <!-- <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                                                 <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                            </div> -->
+                                            <!-- <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <a class="small" href="password.html">Forgot Password?</a>
                                                 <a class="btn btn-primary" href="index.html">Login</a>
-                                            </div>
+                                            </div> -->
                                         </form>
                                     </div>
-                                    <div class="card-footer text-center py-3">
+                                    <!-- <div class="card-footer text-center py-3">
                                         <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-                                    </div>
-                                </div>
+                                    </div> -->
+                                <!-- </div> -->
                             </div>
                         </div>
                     </div>
                 </main>
             </div>
             <div id="layoutAuthentication_footer">
-                <footer class="py-4 bg-light mt-auto">
+                <footer class="py-4 mt-auto" style="background-color: rgba(28, 80, 133, 0.2);">
                     <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div class="d-flex align-items-center justify-content-center small">
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <a href="https://www.lu.lv/" target="_blank">LU</a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="https://www.df.lu.lv/" target="_blank">LU DF</a>
+                                &middot;
+                                <a href="https://estudijas.lu.lv/" target="_blank">E-studijas</a>
+                                &middot;
+                                <a target="_blank" href="https://lu-idp.lu.lv/simplesaml/module.php/core/loginuserpass.php?AuthState=_e033ffc08488f1ed9b965ac30dfcca956a7fc4ad33%3Ahttps%3A%2F%2Flu-idp.lu.lv%2Fsimplesaml%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fluis.lu.lv%252Fshibboleth%26RelayState%3Dss%253Amem%253A146a91a84e5877f09bf4209d305dad3b16ebb32ccb43237b113328f9e3c4a4fa%26cookieTime%3D1641422094">LUIS</a>
+                                &middot;
+                                <a href="https://serviss.lu.lv/login?back_url=https%3A%2F%2Fserviss.lu.lv%2F" target="_blank">LU IT Serviss</a>
                             </div>
                         </div>
                     </div>
