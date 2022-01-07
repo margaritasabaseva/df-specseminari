@@ -13,6 +13,26 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script>
+            function changeColor (elements) {
+                var badge = elements.parentElement.parentElement.getElementsByClassName("badge")[0];
+                if (elements.innerText == 'Pieteikties') {
+                    elements.innerHTML = 'Atteikties';
+                    elements.style.background = '#fff';
+                    elements.style.color = "#1C5085";
+                    badge.innerHTML = "Pieteicies";
+                    badge.classList.add("bg-warning");
+                } else {
+                    elements.innerHTML = 'Pieteikties';
+                    elements.style.background = '#1C5085';
+                    elements.style.color = "#fff";
+                    badge.innerHTML = "Nav";
+                    badge.classList.add("bg-secondary");
+                    badge.classList.remove("bg-warning");
+                    badge.classList.remove("bg-success");
+                }
+            }
+        </script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: #1C5085; height: 70px;">
@@ -88,7 +108,7 @@
                         <h2 class="mt-4" style="font-style: bold; font-weight: bold; display: flex; align-items: center; 
                         letter-spacing: 0.01em; color: #1C5085; margin-left: 30px">Visi specsemināri</h2>
                         <div class="card m-4 border-0" style="box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); border-radius: 10px;">
-                            <div class="card-body">
+                            <div class="card-body" style="overflow-x:auto;">
                                 <table id="dtBasicExample" class="table table-hover">
                                     <thead>
                                         <tr>
@@ -107,17 +127,17 @@
                                         <tr>
                                             <td class="fw-bold" style="color:#1C5085;">Informācijas un komunikācijas tehnoloģijas <br>nozares terminoloģija</td>
                                             <td>Prof. Juris Borzovs
-                                                <br>Prod. Līga Pasniedzēja
+                                                <br>Prof. Līga Pasniedzēja
                                             </td>
                                             <td>katru otro piektdienu 14:00 – 16:00, 
                                                 <br> specseminārs sāksies 10. septembrī
                                             </td>
-                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">4 | 12 | 20</td>
                                             <td class="text-center align-middle">
                                                 <span class="badge bg-warning w-100" style="font-weight: 500; font-size: 15px;">Pieteicies</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars-balts">Atteikties</button>
+                                                <button type="button" class="btn btn-specseminars-balts" onclick="changeColor(this)">Atteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -126,12 +146,12 @@
                                                 <br> Pēteris Kokovkins (BTG)
                                             </td>
                                             <td>pirmdienās 16:30 - 18:00</td>
-                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">4 | 3 | 20</td>
                                             <td class="text-center align-middle">
                                                 <span class="badge bg-secondary w-100" style="font-weight: 500; font-size: 15px;">Nav</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars">Pieteikties</button>
+                                                <button type="button" class="btn btn-specseminars" onclick="changeColor(this)">Pieteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -147,7 +167,7 @@
                                                 <span class="badge bg-secondary w-100" style="font-weight: 500; font-size: 15px;">Nav</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars">Pieteikties</button>
+                                                <button type="button" class="btn btn-specseminars" onclick="changeColor(this)">Pieteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -160,24 +180,24 @@
                                             <td>ceturtdienās 16:30 - 18:05
                                                 <br>specseminārs sāksies 16. septembrī
                                             </td>
-                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">4 | 8 | 20</td>
                                             <td class="text-center align-middle">
                                                 <span class="badge bg-success w-100" style="font-weight: 500; font-size: 15px;">Reģistrēts</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars-balts">Atteikties</button>
+                                                <button type="button" class="btn btn-specseminars-balts" onclick="changeColor(this)">Atteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="fw-bold" style="color:#1C5085;">Informācijas sabiedrības attīstības aktualitātes</td>
                                             <td>Prof. Māris Vītiņš</td>
                                             <td>ceturtdienās 16:30 - 18:05</td>
-                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">4 | 15 | 20</td>
                                             <td class="text-center align-middle">
                                                 <span class="badge bg-secondary w-100" style="font-weight: 500; font-size: 15px;">Nav</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars">Pieteikties</button>
+                                                <button type="button" class="btn btn-specseminars" onclick="changeColor(this)">Pieteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -186,12 +206,12 @@
                                             <td>ceturtdienās 16:30 - 18:05
                                                 <br>specseminārs sāksies 16. septembrī
                                             </td>
-                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">4 | 7 | 20</td>
                                             <td class="text-center align-middle">
                                                 <span class="badge bg-secondary w-100" style="font-weight: 500; font-size: 15px;">Nav</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars">Pieteikties</button>
+                                                <button type="button" class="btn btn-specseminars" onclick="changeColor(this)">Pieteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -206,12 +226,12 @@
                                                 <br> dr. Sc. Comp.Toms Bergmanis (Tilde)
                                             </td>
                                             <td>ceturtdienās 16:30 - 18:00 </td>
-                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">4 | 12 | 20</td>
                                             <td class="text-center align-middle">
                                                 <span class="badge bg-success w-100" style="font-weight: 500; font-size: 15px;">Reģistrēts</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars-balts">Atteikties</button>
+                                                <button type="button" class="btn btn-specseminars-balts" onclick="changeColor(this)">Atteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -223,7 +243,7 @@
                                                 <span class="badge bg-secondary w-100" style="font-weight: 500; font-size: 15px;">Nav</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars">Pieteikties</button>
+                                                <button type="button" class="btn btn-specseminars" onclick="changeColor(this)">Pieteikties</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -231,24 +251,24 @@
                                             <td>Doc. Anastasija Ņikiforova</td>
                                             <td>tiks saskaņoti ar studentiem 
                                                 <br>11.septembrī 9:30 </td>
-                                                <td class="text-center">4 | 4 | 20</td>
+                                                <td class="text-center">4 | 18 | 20</td>
                                                 <td class="text-center align-middle">
                                                     <span class="badge bg-secondary w-100" style="font-weight: 500; font-size: 15px;">Nav</span>
                                                 </td>
                                                 <td class="text-center">
-                                                    <button type="button" class="btn btn-specseminars">Pieteikties</button>
+                                                    <button type="button" class="btn btn-specseminars" onclick="changeColor(this)">Pieteikties</button>
                                                 </td>
                                         </tr>
                                         <tr>
                                             <td class="fw-bold" style="color:#1C5085;">Mākoņdatošanas tehnoloģijas</td>
                                             <td>Prof. Leo Trukšāns </td>
                                             <td>Tiks saskaņots ar studentiem </td>
-                                            <td class="text-center">4 | 4 | 20</td>
+                                            <td class="text-center">4 | 6 | 20</td>
                                             <td class="text-center align-middle">
                                                 <span class="badge bg-secondary w-100" style="font-weight: 500; font-size: 15px;">Nav</span>
                                             </td>
                                             <td class="text-center">
-                                                <button type="button" class="btn btn-specseminars">Pieteikties</button>
+                                                <button type="button" class="btn btn-specseminars" onclick="changeColor(this)">Pieteikties</button>
                                             </td>
                                         </tr>
                                     </tbody>
