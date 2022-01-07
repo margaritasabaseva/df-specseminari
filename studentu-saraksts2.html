@@ -34,6 +34,19 @@
                 }
             }
         </script>
+        <script>
+            function changeColor2 (elements) {
+                if (elements.innerText == 'Nosūtīt studentu sarakstu') {
+                    elements.innerHTML = 'Saraksts nosūtīts!';
+                    elements.style.background = '#fff';
+                    elements.style.color = "#1C5085";
+                } else {
+                    elements.innerHTML = 'Nosūtīt studentu sarakstu';
+                    elements.style.background = '#1C5085';
+                    elements.style.color = "#fff";
+                }
+            }
+        </script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: #1C5085; height: 70px;">
