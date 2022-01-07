@@ -34,19 +34,6 @@
                 }
             }
         </script>
-        <script>
-            function changeColor2 (elements) {
-                if (elements.innerText == 'Nosūtīt studentu sarakstu') {
-                    elements.innerHTML = 'Saraksts nosūtīts!';
-                    elements.style.background = '#fff';
-                    elements.style.color = "#1C5085";
-                } else {
-                    elements.innerHTML = 'Nosūtīt studentu sarakstu';
-                    elements.style.background = '#1C5085';
-                    elements.style.color = "#fff";
-                }
-            }
-        </script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: #1C5085; height: 70px;">
@@ -126,11 +113,11 @@
                     <div class="container-fluid px-5 py-4">
                         <div class="d-flex justify-content-between">
                             <h2 class="mt-4" style="font-style: bold; font-weight: bold; display: flex; align-items: center; letter-spacing: 0.01em; color: #1C5085; margin-left: 30px">Studentu saraksts</h2>
-                            <button href="#" class="btn btn-primary w-25 m-4 mb-0" aria-pressed="true" style="background-color: #1C5085; border: 1px solid #1C5085; border-radius: 5px;" onclick="changeColor2(this)">Nosūtīt studentu sarakstu</button>
+                            <a href="#" class="btn btn-primary w-25 m-4 mb-0" role="button" aria-pressed="true" style="background-color: #1C5085; border: 1px solid #1C5085; border-radius: 5px;"><span class="align-middle">Nosūtīt studentu sarakstu</span></a>
                         </div>
                         <p class="mt-2" style="color: #1C5085; margin-left: 30px">
-                            <a class="text-muted small" href="pasn-seminars-terminologija.html">
-                                <i class="fas fa-angle-left"></i> Informācijas un komunikācijas tehnoloģijas nozares terminoloģija
+                            <a class="text-muted small" href="pasn-seminars-blokkedes.html">
+                                <i class="fas fa-angle-left"></i> Blokķēdes
                             </a>
                         </p>
                         <div class="card m-4 border-0" style="box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); border-radius: 10px;">
@@ -246,6 +233,42 @@
                                         <tr>
                                             <td class="text-center">9. </td>
                                             <td class="fw-bold text-center" style="color:#1C5085;">aj12345</td>
+                                            <td>Garš Vārds Uzvārds</td>
+                                            <td class="text-center">09.07.2021-12:57:38</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success w-75" style="font-weight: 500;  font-size: 15px">Reģistrēts</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a type="button" href="#" class="btn btn-specseminars-balts" onclick="changeColor(this)">Atreģistrēt</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">10. </td>
+                                            <td class="fw-bold text-center" style="color:#1C5085;">ap12345</td>
+                                            <td>Vārds Uzvārds-Uzvārds</td>
+                                            <td class="text-center">09.07.2021-12:57:38</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success w-75" style="font-weight: 500;  font-size: 15px">Reģistrēts</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a type="button" href="#" class="btn btn-specseminars-balts" onclick="changeColor(this)">Atreģistrēt</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">11. </td>
+                                            <td class="fw-bold text-center" style="color:#1C5085;">bb12345</td>
+                                            <td>Vārds Uzvārds</td>
+                                            <td class="text-center">09.07.2021-12:57:38</td>
+                                            <td class="text-center">
+                                                <span class="badge bg-success w-75" style="font-weight: 500;  font-size: 15px">Reģistrēts</span>
+                                            </td>
+                                            <td class="text-center">
+                                                <a type="button" href="#" class="btn btn-specseminars-balts" onclick="changeColor(this)">Atreģistrēt</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">12. </td>
+                                            <td class="fw-bold text-center" style="color:#1C5085;">ba12345</td>
                                             <td>Garš Vārds Uzvārds</td>
                                             <td class="text-center">09.07.2021-12:57:38</td>
                                             <td class="text-center">
