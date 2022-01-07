@@ -13,6 +13,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        <script>
+            function changeColor (elements) {
+                if (elements.innerText == 'Pieteikties') {
+                    elements.innerHTML = 'Atteikties';
+                    elements.style.background = '#fff';
+                    elements.style.color = "#1C5085";
+                } else {
+                    elements.innerHTML = 'Pieteikties';
+                    elements.style.background = '#1C5085';
+                    elements.style.color = "#fff";
+                    badge.innerHTML = "Nav";
+                }
+            }
+        </script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: #1C5085; height: 70px;">
@@ -86,13 +100,16 @@
                 <main>
                     <div class="container-fluid px-4">
                         <div class="card mt-5 mb-4 container-fluid d-flex justify-content-center border-0" style="max-width: 80%; background: #FFFFFF; box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06); border-radius: 10px;">
-                            <div class="card-body">
+                            <div class="card-body" style="overflow-x:auto;">
                                 <div class="row g-3 py-2 container-fluid d-flex justify-content-center">
                                     <div class="col-md-5">
-                                        <div class="row py-3">
+                                        <div class="row pt-3">
                                             <h5 class="card-title" style="font-style: normal; font-weight: bold; font-size: 24px; 
                                             line-height: 36px; display: flex; align-items: center; 
                                             letter-spacing: 0.01em; color: #1C5085;">Valodas tehnoloģijas un mākslīgais intelekts</h5>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-specseminars-balts w-50" onclick="changeColor(this)">Atteikties</button>
                                         </div>
                                         <div class="row p-3 card-body">
                                             <h6 style="font-weight: 500; font-size: 18px; line-height: 27px; display: flex; align-items: center; letter-spacing: 0.01em; color: #5f6a75;">Pasniedzēji</h6>
